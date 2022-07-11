@@ -1,0 +1,19 @@
+.cell{
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    border-color: black;
+}
+
+.colored{
+    background-color: black;
+}
