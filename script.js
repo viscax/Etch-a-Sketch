@@ -50,6 +50,18 @@ container.addEventListener('mouseover', function(e){
     }
 })
 
+container.addEventListener('click', function(e){
+    if (e.target.matches('.cell') && drawColor == 'black'){
+        e.target.style.backgroundColor = 'black';
+    }
+    else if (e.target.matches('.cell') && drawColor == 'rainbow'){
+        e.target.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)`
+    }
+    else if (e.target.matches('.cell') && drawColor == 'white'){
+        e.target.style.backgroundColor = 'white';
+    }
+})
+
 function resetGrid(){
     const cells = document.querySelectorAll('.cell');
     cells.forEach((cell) =>{
