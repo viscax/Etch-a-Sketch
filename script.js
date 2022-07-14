@@ -7,14 +7,14 @@ trigger = false;
 function createGrid(size){
     for (let i = 0; i < size; i++){
         const row = document.createElement('div');
-        row.style.height = `${600/size}px`;
+        row.style.height = `${500/size}px`;
         row.classList.add("row");
         container.appendChild(row);
         for (let j = 0; j < size; j++){
             const cell = document.createElement('div');
             cell.classList.add('cell');
-            cell.style.width = `${600/size}px`;
-            cell.style.height = `${600/size}px`;
+            cell.style.width = `${500/size}px`;
+            cell.style.height = `${500/size}px`;
             row.appendChild(cell);
         }
     }
