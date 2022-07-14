@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    
+    <h1 class="title">Etch-a-Sketch!</h1>
     <div class="container"></div>
-    <button class="reset">Reset</button>
+    
+    <div class="sliderContainer">
+        <input type="range" min="2" max="70" value="6" id="myRange" class="slider">
+    </div>
+    <div class="buttons">
+        <button class="button reset">Reset</button>
+        <button class="button black">Classic</button>
+        <button class="button rainbow">Rainbow</button>
+        <button class="button erase">Eraser</button>
+    </div>
+    <div class="footer">A Viscax Game, 2022. Click and draw to bring this canvas to life!</div>
+    
     <script src="script.js"></script>
 </body>
 </html>
